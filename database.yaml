@@ -6,8 +6,8 @@ metadata:
 spec:
   version: latest
   size:
-    class: dev
-    storageGB: 32
+    class: small
+    storageGB: 100
   credentialsSecret: buildingiot-postgres-credentials
 ---
 apiVersion: hybridcloud.maibornwolff.de/v1alpha1
