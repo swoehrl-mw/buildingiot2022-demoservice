@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: demoservice
 spec:
-  replicas: 1
+  replicas: {{.Values.serviceReplicas}}
   selector:
     matchLabels:
       app: demoservice
