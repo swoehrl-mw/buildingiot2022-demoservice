@@ -2,7 +2,6 @@ apiVersion: hybridcloud.maibornwolff.de/v1alpha1
 kind: PostgreSQLServer
 metadata:
   name: buildingiot
-  namespace: buildingiot
 spec:
   version: latest
   size:
@@ -14,7 +13,6 @@ apiVersion: hybridcloud.maibornwolff.de/v1alpha1
 kind: PostgreSQLDatabase
 metadata:
   name: demoservice
-  namespace: buildingiot
 spec:
   serverRef:
     name: buildingiot
