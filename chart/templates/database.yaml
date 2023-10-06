@@ -1,13 +1,13 @@
 apiVersion: hybridcloud.maibornwolff.de/v1alpha1
 kind: PostgreSQLServer
 metadata:
-  name: buildingiot
+  name: demo
 spec:
   version: latest
   size:
     class: small
     storageGB: 100
-  credentialsSecret: buildingiot-postgres-credentials
+  credentialsSecret: demo-postgres-credentials
 ---
 apiVersion: hybridcloud.maibornwolff.de/v1alpha1
 kind: PostgreSQLDatabase
@@ -15,7 +15,7 @@ metadata:
   name: demoservice
 spec:
   serverRef:
-    name: buildingiot
+    name: demo
   database:
     charset: UTF8
   credentialsSecret: demoservice-postgres-credentials
